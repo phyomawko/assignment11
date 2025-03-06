@@ -3,7 +3,7 @@ resource "aws_networkfirewall_rule_group" "allow_specific_ip" {
   capacity    = 100
   name        = "allow-specific-ip"
   type        = "STATELESS"
-  description = "Allow all traffic from 52.221.106.252 and drop everything else"
+  description = "Allow all traffic from my specific source IP and drop everything else"
 
   rule_group {
     rules_source {
